@@ -1,0 +1,8 @@
+staticSite:
+  - name: waste-complaint-web
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://your-backend-url.onrender.com/api
