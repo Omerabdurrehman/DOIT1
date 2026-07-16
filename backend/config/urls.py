@@ -18,6 +18,11 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
+    path("", lambda request: JsonResponse({
+        "status": "ok",
+        "message": "Smart Waste & Garbage Complaint Management System API",
+        "docs": "/swagger/",
+    })),
     path("healthz/", lambda request: JsonResponse({"status": "ok"})),
     path("admin/", admin.site.urls),
     path("api/auth/", include("accounts.urls")),
