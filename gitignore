@@ -1,0 +1,25 @@
+/SmartWasteComplaintSystem.zip
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+db.sqlite3
+staticfiles/
+media/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/android/
+frontend_new/dist/
+
+# Env files (keep .env.example, ignore real secrets)
+.env
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# OS/editor junk
+.DS_Store
+*.log
